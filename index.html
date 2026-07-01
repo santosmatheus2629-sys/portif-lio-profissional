@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect Soluções Digitais</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header>
+
+        <h1>TechConnect</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#consultas">Consultas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- Banner -->
+
+    <section id="inicio" class="banner">
+
+        <h2>Tecnologia para facilitar o seu dia a dia</h2>
+
+        <p>
+            A TechConnect oferece soluções digitais utilizando
+            informações em tempo real através de APIs públicas.
+        </p>
+
+    </section>
+
+    <!-- Serviços -->
+
+    <section id="servicos" class="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Consulta de CEP</h3>
+                <p>Encontre o endereço completo informando apenas o CEP.</p>
+            </div>
+
+            <div class="card">
+                <h3>Consulta de DDD</h3>
+                <p>Veja o estado e as cidades de um DDD brasileiro.</p>
+            </div>
+
+            <div class="card">
+                <h3>Consulta de Bancos</h3>
+                <p>Pesquise bancos utilizando o código informado.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Consultas -->
+
+    <section id="consultas" class="consultas">
+
+        <h2>Faça sua consulta</h2>
+
+        <!-- CEP -->
+
+        <div class="caixa">
+
+            <h3>Consultar CEP</h3>
+
+            <input type="text" id="cep" placeholder="Digite o CEP">
+
+            <button onclick="buscarCEP()">
+                Consultar
+            </button>
+
+            <div id="resultadoCEP"></div>
+
+        </div>
+
+        <!-- DDD -->
+
+        <div class="caixa">
+
+            <h3>Consultar DDD</h3>
+
+            <input type="number" id="ddd" placeholder="Digite o DDD">
+
+            <button onclick="buscarDDD()">
+                Consultar
+            </button>
+
+            <div id="resultadoDDD"></div>
+
+        </div>
+
+        <!-- Banco -->
+
+        <div class="caixa">
+
+            <h3>Consultar Banco</h3>
+
+            <input type="number" id="banco" placeholder="Digite o código do banco">
+
+            <button onclick="buscarBanco()">
+                Consultar
+            </button>
+
+            <div id="resultadoBanco"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Rodapé -->
+
+    <footer id="contato">
+
+        <h3>TechConnect Soluções Digitais</h3>
+
+        <p>Email: contato@techconnect.com</p>
+
+        <p>Telefone: (11) 99999-9999</p>
+
+        <p>© 2026 - Todos os direitos reservados.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
